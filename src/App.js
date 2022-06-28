@@ -26,7 +26,7 @@ import {
 import "./App.css";
 
 const App = () => {
-  const activeMenu = false;
+  const activeMenu = true;
 
   return (
     <div>
@@ -44,7 +44,7 @@ const App = () => {
             </TooltipComponent>
           </div>
           {activeMenu ? (
-            <div className="w-72 fix sidebar dark:bg-secondary-dark-bg bg-white">
+            <div className="w-72 fixed sidebar dark:bg-secondary-dark-bg bg-white">
               <Sidebar />
             </div>
           ) : (
